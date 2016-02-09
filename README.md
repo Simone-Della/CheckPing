@@ -34,7 +34,8 @@ Install mail server Postfix
        if you want to specify a non default port, insert: [mail.isp.example]:587 username:password
 
 Create the hash db file for Postfix
-   sudo postmap /etc/postfix/sasl_passwd
+
+    sudo postmap /etc/postfix/sasl_passwd
    
 You should have a new file named sasl_passwd.db in the /etc/postfix/
 
