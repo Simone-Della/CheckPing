@@ -89,3 +89,8 @@ Use Relay host:
     
     relayhost = [smtp.gmail.com]:587
 
+    sudo postmap /etc/postfix/sasl_passwd
+    
+    sudo service postfix restart
+    
+    
