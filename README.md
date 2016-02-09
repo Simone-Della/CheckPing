@@ -94,6 +94,11 @@ At the end of the file, add the following parameters to enable authentication:
     
     sudo service postfix restart
     
+You can use systemctl for start stop and restart postfix:
+
+    sudo systemctl start postfix
+    sudo systemctl stop postfix
+    sudo systemctl restart postfix
 
 Performs checkping:
 
