@@ -68,7 +68,7 @@ At the end of the file, add the following parameters to enable authentication:
     
 >Configuration for provider example:
 
-For google apps:
+>For google apps:
 
     sudo vim /etc/postfix/sasl_passwd
     
@@ -76,7 +76,7 @@ For google apps:
     
     [smtp.gmail.com]:587 <USERNAME@gmail.com>:PASSWORD
     
-For your domain:
+>For your domain:
   
     sudo vim /etc/postfix/sasl_passwd
     
@@ -84,7 +84,7 @@ For your domain:
     
     [smtp.gmail.com]:587 <USERNAME@yourdomain.com>:PASSWORD
     
-Use Relay host:
+>Use Relay host:
     
     sudo vim /etc/postfix/main.cf
     
@@ -94,4 +94,11 @@ Use Relay host:
     
     sudo service postfix restart
     
+
+Performs checkping:
+
+    vim sendmail.py
+      and modify mail as you prefer
+
+    ./pingcheck.py (ipaddress)
     
