@@ -65,6 +65,27 @@ At the end of the file, add the following parameters to enable authentication:
 
     sudo service postfix restart
     
+>Configuration for provider example:
 
-  
+For google apps:
+
+    sudo vim /etc/postfix/sasl_passwd
     
+    insert:
+    
+    [smtp.gmail.com]:587 <USERNAME@gmail.com>:PASSWORD
+    
+For your domain:
+  
+    sudo vim /etc/postfix/sasl_passwd
+    
+    insert:
+    
+    [smtp.gmail.com]:587 <USERNAME@yourdomain.com>:PASSWORD
+    
+Use Relay host:
+    
+    sudo vim /etc/postfix/main.cf
+    
+    relayhost = [smtp.gmail.com]:587
+
